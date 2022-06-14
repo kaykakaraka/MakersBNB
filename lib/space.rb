@@ -1,9 +1,10 @@
 class Space
 
   def self.add(name)
+    @name = name
   end
 
   def self.all
-    ['The Moon', 'The Sea']
+    @name
   end
 end

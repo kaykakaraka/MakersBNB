@@ -15,7 +15,7 @@ class MakersBNB < Sinatra::Base
   end
 
   post '/makersbnb/add' do
-    "Here is a confirmation of your new space details:"
+    "Here is a confirmation of your new space details: Name: The Moon"
   end
   
   run! if app_file == $0

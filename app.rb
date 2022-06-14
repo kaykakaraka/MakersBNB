@@ -15,7 +15,11 @@ class MakersBNB < Sinatra::Base
   end
 
   post '/makersbnb/add' do
-    "Here is a confirmation of your new space details: Name: The Moon"
+    redirect ('/makersbnb/add_confirmation')
+  end
+
+  get '/makersbnb/add_confirmation' do
+    erb(:'makersbnb/add_confirmation')
   end
   
   run! if app_file == $0
